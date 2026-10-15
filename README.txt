@@ -1,5 +1,5 @@
-GreenFields Farming Company — Phase 6
-Built by Ansu Tech Solutions
+GreenFields Farming Company 
+Built by mulauli
 
 Open index.html with VS Code Live Server. Visit Demo Admin to manage the sample catalogue, enquiries and sample orders.
 
