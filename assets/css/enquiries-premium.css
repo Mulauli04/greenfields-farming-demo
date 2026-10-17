@@ -1,0 +1,154 @@
+/* Premium enquiry wizard: progressively enhanced presentation */
+.enq-hero {
+  position: relative;
+  background: linear-gradient(115deg, #0b281d, #1c5436);
+  padding: 100px 0 92px;
+}
+.enq-hero:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 30%, #80b66125, transparent 48%);
+  pointer-events: none;
+}
+.enq-hero .container {
+  position: relative;
+}
+.enq-hero h1 {
+  max-width: 750px;
+}
+.enq-hero-photo {
+  height: 390px;
+  transform: rotate(2deg);
+  border: 8px solid #ffffff1a;
+  box-shadow: 0 30px 70px #0005;
+}
+.enq-section {
+  background: #f7f6ef;
+}
+.enq-panel {
+  border-radius: 26px;
+  box-shadow: 0 22px 65px #173e2c12;
+}
+.premium-progress {
+  margin: 8px 0 28px;
+}
+.premium-progress-bar {
+  height: 7px;
+  background: #e8eee3;
+  border-radius: 99px;
+  overflow: hidden;
+}
+.premium-progress-bar span {
+  display: block;
+  width: 33.333%;
+  height: 100%;
+  background: linear-gradient(90deg, #2e7d4b, #9ac965);
+  transition: width 0.35s ease;
+}
+.premium-progress-labels {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+}
+.premium-progress-labels span {
+  font-size: 0.79rem;
+  color: #89968b;
+}
+.premium-progress-labels strong {
+  display: block;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+.premium-progress-labels .is-active {
+  color: #1d633d;
+}
+.wizard-stage[hidden] {
+  display: none !important;
+}
+.wizard-stage {
+  animation: stage-in 0.35s ease;
+}
+.wizard-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+.wizard-actions .btn-green {
+  padding: 13px 22px;
+}
+.wizard-actions #wizard-reset {
+  margin-left: auto;
+  color: #52715b;
+  text-decoration: none;
+}
+.enq-item {
+  background: #f8faf5;
+  border-radius: 16px;
+}
+.enq-review {
+  margin-top: 0 !important;
+  padding-top: 8px;
+  border: 0;
+}
+.enq-review textarea {
+  background: #f8faf5;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+.enq-aside {
+  background: linear-gradient(160deg, #e8f0df, #f4f5e9);
+}
+.enq-notice {
+  font-size: 0.88rem;
+}
+.form-control:focus-visible,
+.form-select:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid #9ac965;
+  outline-offset: 2px;
+}
+@keyframes stage-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 767px) {
+  .enq-hero {
+    padding: 65px 0;
+  }
+  .enq-hero-photo {
+    height: 260px;
+    transform: none;
+  }
+  .premium-progress-labels strong {
+    font-size: 0.72rem;
+  }
+  .enq-panel {
+    padding: 22px 18px;
+  }
+  .wizard-actions .btn-green {
+    width: 100%;
+    order: -1;
+  }
+  .wizard-actions #wizard-reset {
+    margin-left: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wizard-stage {
+    animation: none;
+  }
+  .premium-progress-bar span {
+    transition: none;
+  }
+}

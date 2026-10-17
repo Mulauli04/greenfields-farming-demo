@@ -1,0 +1,153 @@
+/* GreenFields — premium farm experience */
+.farm-field-experience {
+  background: #f7f4e9;
+}
+.farm-field-experience h2 {
+  max-width: 760px;
+}
+.field-experience-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  min-height: 570px;
+  background: #123c2b;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 24px 70px rgba(13, 48, 31, 0.13);
+}
+.field-experience-image {
+  position: relative;
+  min-height: 480px;
+  overflow: hidden;
+}
+.field-experience-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  transition:
+    opacity 0.24s ease,
+    transform 0.7s ease;
+}
+.field-experience-image:hover img {
+  transform: scale(1.025);
+}
+.field-image-tag {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background: #f7f4e9;
+  color: #123c2b;
+  padding: 12px 16px;
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  border-radius: 4px;
+}
+.field-experience-panel {
+  padding: clamp(24px, 4vw, 62px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.field-panel-kicker {
+  color: #c3db9c;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  font-weight: 800;
+}
+.field-stage-buttons {
+  margin: 12px 0 20px;
+}
+.field-stage {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  column-gap: 14px;
+  width: 100%;
+  padding: 19px 12px;
+  background: transparent;
+  color: #e8f2e9;
+  border: 0;
+  border-bottom: 1px solid #ffffff36;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.field-stage:first-child {
+  border-top: 1px solid #ffffff36;
+}
+.field-stage > span {
+  grid-row: span 2;
+  color: #b9d687;
+  font-weight: 800;
+}
+.field-stage strong {
+  font-size: 1.1rem;
+}
+.field-stage small {
+  font-size: 0.81rem;
+  color: #c1d4c5;
+  margin-top: 3px;
+}
+.field-stage:hover,
+.field-stage:focus-visible,
+.field-stage.active {
+  background: #ffffff17;
+  outline-offset: -3px;
+}
+.field-stage.active {
+  box-shadow: inset 3px 0 #c3df85;
+}
+.field-stage-description {
+  min-height: 3.5em;
+  color: #e1ece2;
+  line-height: 1.7;
+}
+.field-experience-panel .btn {
+  align-self: flex-start;
+}
+.farm-page-hero > img {
+  animation: farmHeroReveal 1.2s ease-out both;
+}
+@keyframes farmHeroReveal {
+  from {
+    transform: scale(1.06);
+    opacity: 0.7;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media (max-width: 991px) {
+  .field-experience-layout {
+    grid-template-columns: 1fr;
+  }
+  .field-experience-image {
+    min-height: 400px;
+  }
+  .field-experience-panel {
+    padding: 32px;
+  }
+}
+@media (max-width: 575px) {
+  .field-experience-image {
+    min-height: 310px;
+  }
+  .field-experience-panel {
+    padding: 24px;
+  }
+  .field-stage {
+    padding: 16px 8px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .farm-page-hero > img {
+    animation: none;
+  }
+  .field-experience-image img {
+    transition: none;
+  }
+}

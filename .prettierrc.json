@@ -1,0 +1,10 @@
+{
+  "tabWidth": 2,
+  "printWidth": 100,
+  "semi": true,
+  "singleQuote": true,
+  "quoteProps": "preserve",
+  "trailingComma": "es5",
+  "htmlWhitespaceSensitivity": "strict",
+  "endOfLine": "lf"
+}

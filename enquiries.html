@@ -1,0 +1,339 @@
+<!doctype html>
+
+<!doctype html>
+
+<html lang="en"
+  ><head
+    ><meta charset="utf-8" /><meta
+      content="width=device-width,initial-scale=1"
+      name="viewport" /><meta content="#173e2c" name="theme-color" /><meta
+      content="Prepare a fresh produce supply enquiry for GreenFields Farming Company."
+      name="description" /><title>Produce Enquiry | GreenFields Farming Company</title
+    ><link href="https://fonts.googleapis.com" rel="preconnect" /><link
+      crossorigin=""
+      href="https://fonts.gstatic.com"
+      rel="preconnect" /><link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet" /><link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" /><link href="assets/css/styles.css" rel="stylesheet" /><link
+      href="assets/css/enquiries.css"
+      rel="stylesheet" /><link href="assets/css/enquiries-premium.css" rel="stylesheet" /><link
+      href="favicon.svg"
+      rel="icon"
+      type="image/svg+xml" /></head
+  ><body
+    ><a class="skip-link" href="#main">Skip to content</a
+    ><div class="topbar"
+      ><div class="container d-flex justify-content-between"
+        ><span>Locally grown. Carefully harvested.</span
+        ><span class="d-none d-sm-inline">Fresh produce • Farm to customer</span></div
+      ></div
+    ><nav aria-label="Main navigation" class="navbar navbar-expand-lg sticky-top"
+      ><div class="container"
+        ><a class="navbar-brand d-flex align-items-center gap-2" href="index.html"
+          ><span aria-hidden="true" class="brand-icon">✳</span
+          ><span
+            >Green<span class="brand-accent">Fields</span><small>FARMING COMPANY</small></span
+          ></a
+        ><button
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-bs-target="#mainNav"
+          data-bs-toggle="collapse"
+          type="button"
+          ><span class="navbar-toggler-icon"></span></button
+        ><div class="collapse navbar-collapse" id="mainNav"
+          ><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3"
+            ><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li
+            ><li class="nav-item"><a class="nav-link" href="about.html">About</a></li
+            ><li class="nav-item"><a class="nav-link" href="products.html">Products</a></li
+            ><li class="nav-item"><a class="nav-link" href="farm.html">Our Farm</a></li
+            ><li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li
+            ><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li
+            ><li class="nav-item"
+              ><a aria-current="page" class="nav-link active" href="enquiries.html"
+                >Enquiries</a
+              ></li
+            ></ul
+          ></div
+        ></div
+      ></nav
+    ><main id="main"
+      ><section class="enq-hero"
+        ><div class="container"
+          ><div class="row align-items-center g-4"
+            ><div class="col-lg-7"
+              ><p class="eyebrow light">GREENFIELDS / PRODUCE ENQUIRIES</p
+              ><h1>Your next harvest <em>starts here.</em></h1
+              ><p
+                >Tell us what you need, choose your crops, and prepare a clear request in three
+                simple steps.</p
+              ><a class="btn btn-lime" href="#enquiry-form">Start your enquiry ↗</a></div
+            ><div class="col-lg-5"
+              ><img
+                alt="Freshly harvested farm produce"
+                class="enq-hero-photo"
+                src="assets/images/tomato-harvest.jpg" /></div></div></div></section
+      ><section class="enq-section" id="enquiry-form"
+        ><div class="container"
+          ><div class="row g-4 g-xl-5"
+            ><div class="col-lg-8"
+              ><div class="enq-panel"
+                ><div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-4"
+                  ><div
+                    ><p class="eyebrow mb-2">PRODUCE ENQUIRY</p><h2>Make a produce enquiry</h2></div
+                  ></div
+                ><div aria-label="Enquiry progress" class="premium-progress"
+                  ><div class="premium-progress-bar"><span id="progress-fill"></span></div
+                  ><div class="premium-progress-labels"
+                    ><span class="is-active" data-stage="0">01 <strong>Your details</strong></span
+                    ><span data-stage="1">02 <strong>Your produce</strong></span
+                    ><span data-stage="2">03 <strong>Review &amp; copy</strong></span></div
+                  ></div
+                ><p class="enq-notice"
+                  >Preview only: this form prepares a message for you to copy or save. It does not
+                  send your enquiry to the farm.</p
+                ><form id="produce-enquiry" novalidate=""
+                  ><section aria-label="Contact details" class="wizard-stage" data-step="0"
+                    ><h3 class="enq-subhead">Your contact details</h3
+                    ><div class="row g-3"
+                      ><div class="col-md-6"
+                        ><label class="form-label" for="customer-name">Full name *</label
+                        ><input
+                          autocomplete="name"
+                          class="form-control"
+                          id="customer-name"
+                          maxlength="100"
+                          name="customerName"
+                          placeholder="Your name"
+                          required="" /></div
+                      ><div class="col-md-6"
+                        ><label class="form-label" for="customer-phone">Phone number *</label
+                        ><input
+                          autocomplete="tel"
+                          class="form-control"
+                          id="customer-phone"
+                          maxlength="25"
+                          name="phone"
+                          placeholder="Your phone number"
+                          required=""
+                          type="tel" /></div
+                      ><div class="col-md-6"
+                        ><label class="form-label" for="customer-email">Email (optional)</label
+                        ><input
+                          autocomplete="email"
+                          class="form-control"
+                          id="customer-email"
+                          maxlength="120"
+                          name="email"
+                          placeholder="you@example.com"
+                          type="email" /></div
+                      ><div class="col-md-6"
+                        ><label class="form-label" for="buyer-type">Enquiry type *</label
+                        ><select class="form-select" id="buyer-type" required=""
+                          ><option value="">Choose enquiry type</option
+                          ><option>Individual purchase</option
+                          ><option>Business / retailer</option
+                          ><option>Bulk supply</option
+                          ><option>Regular supply</option
+                          ><option>General enquiry</option></select
+                        ></div
+                      ></div
+                    ></section
+                  ><section
+                    aria-label="Produce and supply preferences"
+                    class="wizard-stage"
+                    data-step="1"
+                    hidden=""
+                    ><div class="d-flex align-items-center justify-content-between gap-3"
+                      ><h3 class="enq-subhead mb-0">Produce you need</h3
+                      ><button class="enq-text-btn" id="add-item" type="button"
+                        >+ Add another crop</button
+                      ></div
+                    ><div class="mt-3" id="item-list"></div
+                    ><template id="item-template"
+                      ><div class="enq-item"
+                        ><div class="d-flex justify-content-between align-items-center mb-3"
+                          ><strong class="item-title">Crop 1</strong
+                          ><button aria-label="Remove crop" class="remove-item" type="button"
+                            >Remove</button
+                          ></div
+                        ><div class="row g-3"
+                          ><div class="col-md-5"
+                            ><label class="form-label">Crop *</label
+                            ><select class="form-select crop-select" required=""
+                              ><option value="">Choose crop</option
+                              ><option>Cabbage</option
+                              ><option>Green peppers</option
+                              ><option>Tomatoes</option
+                              ><option>Watermelons</option
+                              ><option>Sugarcane</option
+                              ><option>Beetroot</option
+                              ><option>Leafy vegetables</option
+                              ><option>Other produce</option></select
+                            ></div
+                          ><div class="col-md-3"
+                            ><label class="form-label">Quantity</label
+                            ><input
+                              class="form-control crop-quantity"
+                              max="1000000"
+                              min="1"
+                              placeholder="e.g. 20"
+                              step="1"
+                              type="number" /></div
+                          ><div class="col-md-4"
+                            ><label class="form-label">Unit</label
+                            ><select class="form-select crop-unit"
+                              ><option value="">Not sure</option
+                              ><option>Crates</option
+                              ><option>Heads</option
+                              ><option>Kilograms</option
+                              ><option>Tonnes</option
+                              ><option>Bundles</option
+                              ><option>Pieces</option></select
+                            ></div
+                          ></div
+                        ></div
+                      ></template
+                    ><h3 class="enq-subhead">Supply preferences</h3
+                    ><div class="row g-3"
+                      ><div class="col-md-6"
+                        ><label class="form-label" for="supply-method">Preferred arrangement</label
+                        ><select class="form-select" id="supply-method"
+                          ><option value="">To be discussed</option
+                          ><option>Collection</option
+                          ><option>Delivery enquiry</option></select
+                        ></div
+                      ><div class="col-md-6"
+                        ><label class="form-label" for="needed-by">Preferred date (optional)</label
+                        ><input class="form-control" id="needed-by" type="date" /></div
+                      ><div class="col-12"
+                        ><label class="form-label" for="delivery-area">Area / town (optional)</label
+                        ><input
+                          class="form-control"
+                          id="delivery-area"
+                          maxlength="120"
+                          placeholder="Where would you need the produce?" /></div
+                      ><div class="col-12"
+                        ><label class="form-label" for="enquiry-message"
+                          >Additional details (optional)</label
+                        ><textarea
+                          class="form-control"
+                          id="enquiry-message"
+                          maxlength="1500"
+                          placeholder="Tell us about frequency, packaging, or other requirements"
+                          rows="4"
+                        ></textarea></div></div></section
+                  ><section
+                    aria-label="Review your enquiry"
+                    class="wizard-stage"
+                    data-step="2"
+                    hidden=""
+                    ><h3 class="enq-subhead">Review your enquiry</h3
+                    ><p
+                      >Check the prepared message before copying or saving it. No information is
+                      sent automatically.</p
+                    ><div aria-live="polite" class="enq-review mt-4" id="enquiry-review"
+                      ><p class="eyebrow">FINAL STEP / YOUR MESSAGE</p><h3>Your prepared enquiry</h3
+                      ><p
+                        >Copy or save this message, then share it using the farm’s confirmed contact
+                        details.</p
+                      ><textarea
+                        aria-label="Prepared enquiry message"
+                        class="form-control"
+                        id="enquiry-output"
+                        readonly=""
+                        rows="14"
+                      ></textarea
+                      ><div class="d-flex flex-wrap gap-2 mt-3"
+                        ><button class="btn btn-green" id="copy-message" type="button"
+                          >Copy enquiry</button
+                        ><button
+                          class="btn btn-outline-secondary"
+                          id="download-message"
+                          type="button"
+                          >Save as text file</button
+                        ></div
+                      ><p class="small mt-3" id="enquiry-feedback" role="status"></p></div></section
+                  ><div class="wizard-actions"
+                    ><button
+                      class="btn btn-outline-secondary"
+                      hidden=""
+                      id="wizard-back"
+                      type="button"
+                      >← Back</button
+                    ><button class="btn btn-green" id="wizard-next" type="button"
+                      >Continue to produce →</button
+                    ><button class="btn btn-green" hidden="" id="wizard-review" type="button"
+                      >Prepare my enquiry →</button
+                    ><button class="btn btn-link" id="wizard-reset" type="reset"
+                      >Start again</button
+                    ></div
+                  ></form
+                ></div
+              ></div
+            ><div class="col-lg-4"
+              ><aside class="enq-aside"
+                ><p class="eyebrow">HOW IT WORKS</p><h2>Three easy steps.</h2
+                ><div class="enq-timeline"
+                  ><div
+                    ><span>01</span
+                    ><section
+                      ><h3>Choose your produce</h3
+                      ><p
+                        >Select crops and quantities, or leave quantities open for discussion.</p
+                      ></section
+                    ></div
+                  ><div
+                    ><span>02</span
+                    ><section
+                      ><h3>Review your request</h3
+                      ><p
+                        >Add crops, quantities, preferred dates and supply arrangements.</p
+                      ></section
+                    ></div
+                  ><div
+                    ><span>03</span
+                    ><section
+                      ><h3>Contact the farm</h3
+                      ><p
+                        >Copy your completed enquiry and send it using a confirmed contact
+                        channel.</p
+                      ></section
+                    ></div
+                  ></div
+                ><div class="enq-aside-note"
+                  ><strong>Need help choosing crops?</strong
+                  ><p>Explore our product catalogue and return when you're ready.</p
+                  ><a href="products.html">Browse all products ↗</a></div
+                ></aside
+              ></div
+            ></div
+          ></div
+        ></section
+      ></main
+    ><footer
+      ><div class="container"
+        ><div
+          class="d-flex flex-column flex-md-row justify-content-between gap-3 align-items-md-center"
+          ><div class="footer-brand">✳ Green<span>Fields</span><small>FARMING COMPANY</small></div
+          ><div class="footer-links"
+            ><a href="index.html">Home</a><a href="about.html">About</a
+            ><a href="products.html">Produce</a><a href="farm.html">Our Farm</a
+            ><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a
+            ><a href="enquiries.html">Enquiries</a></div
+          ></div
+        ><hr /><div
+          class="d-flex flex-column flex-md-row justify-content-between gap-2 footer-bottom"
+          ><span>© <span id="year"></span> GreenFields Farming Company. All rights reserved.</span
+          ><span>Grown with care.</span></div
+        ></div
+      ></footer
+    ><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+    ><script src="assets/js/main.js"></script
+    ><script src="assets/js/enquiries.js"></script
+    ><script src="assets/js/enquiries-premium.js"></script></body
+></html>

@@ -1,0 +1,1 @@
+Products: Section 02 / From Field to Harvest uses a medium 460px-wide, 320px-tall photo on desktop and 235px tall on mobile. Gallery: banner now uses an original leafy-crop photograph (farm-photo-02.jpg). All other pages and original hero photos retained.

@@ -1,0 +1,1 @@
+Original homepage photographs from GreenFields_Pages_1_10 restored to the premium slideshow: hero-cabbage.jpg (original first homepage background), farm-rows.jpg, farmer.jpg. Slideshow retained. Other premium refinements retained.

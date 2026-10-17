@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /admin-login.html
+Sitemap: https://mulauli04.github.io/greenfields-farming-demo/sitemap.xml
