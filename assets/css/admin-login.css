@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  color: #203c2d;
+  background: #fafbf7;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input {
+  font: inherit;
+}
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  background: white;
+  padding: 1rem;
+  z-index: 10;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 52% 48%;
+  min-height: 100vh;
+}
+.story {
+  position: relative;
+  background: #153d2a url('../images/farm-rows.jpg') center/cover no-repeat;
+  color: #fff;
+  min-height: 100vh;
+}
+.story-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 43, 28, 0.72),
+    rgba(10, 43, 28, 0.32) 40%,
+    rgba(10, 43, 28, 0.92)
+  );
+}
+.story-inner {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(30px, 5vw, 75px);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font:
+    700 29px 'Outfit',
+    sans-serif;
+  letter-spacing: -1px;
+}
+.brand-mark {
+  width: 47px;
+  height: 47px;
+  display: grid;
+  place-items: center;
+  background: #c9e76b;
+  color: #193d2b;
+  border-radius: 13px;
+  font-size: 30px;
+}
+.brand small,
+.mobile-brand small {
+  display: block;
+  font:
+    700 10px 'DM Sans',
+    sans-serif;
+  letter-spacing: 2.6px;
+  margin-top: -4px;
+}
+.lime,
+.story em {
+  color: #d7f28a;
+}
+.kicker {
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+.story h1 {
+  font:
+    700 clamp(43px, 5.1vw, 83px)/1.05 'Outfit',
+    sans-serif;
+  letter-spacing: -2px;
+  margin: 22px 0;
+}
+.story h1 em {
+  font-style: normal;
+}
+.story-copy p {
+  font-size: 17px;
+  max-width: 490px;
+  line-height: 1.8;
+  color: #e5eee7;
+}
+.story-line {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 55px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.story-line .line {
+  height: 1px;
+  width: 80px;
+  background: #d7f28a;
+}
+.story-foot {
+  font-size: 13px;
+  color: #d7e4d7;
+}
+.login-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px clamp(22px, 5vw, 90px) 25px;
+}
+.login-wrap {
+  width: 100%;
+  max-width: 470px;
+  margin: auto 0;
+}
+.back {
+  display: inline-block;
+  color: #54715f;
+  font-size: 13px;
+  margin: 0 0 54px;
+}
+.back:hover {
+  color: #193d2b;
+}
+.tag {
+  display: inline-flex;
+  gap: 9px;
+  align-items: center;
+  color: #355f44;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #7da947;
+  border-radius: 50%;
+}
+.login-wrap h2 {
+  font:
+    700 clamp(38px, 3.6vw, 57px)/1.1 'Outfit',
+    sans-serif;
+  letter-spacing: -1.5px;
+  margin: 17px 0 12px;
+}
+.period {
+  color: #90af4c;
+}
+.intro {
+  color: #6d7e70;
+  margin-bottom: 27px;
+}
+.notice {
+  background: #edf3e4;
+  border-left: 3px solid #8caf52;
+  border-radius: 5px;
+  padding: 13px 16px;
+  color: #37543c;
+  font-size: 12px;
+  line-height: 1.65;
+  margin-bottom: 25px;
+}
+.field {
+  margin-bottom: 23px;
+}
+.field label {
+  font-size: 13px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+}
+.field input {
+  width: 100%;
+  border: 1px solid #d5dfd4;
+  border-radius: 11px;
+  background: #fff;
+  padding: 16px 18px;
+  outline: none;
+  transition:
+    border 0.2s,
+    box-shadow 0.2s;
+}
+.field input:focus {
+  border-color: #6e9c55;
+  box-shadow: 0 0 0 4px #8caf5222;
+}
+.field small {
+  display: block;
+  margin-top: 8px;
+  color: #758777;
+  font-size: 11px;
+}
+.password-wrap {
+  position: relative;
+}
+.password-wrap input {
+  padding-right: 75px;
+}
+.password-wrap button {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: #39654b;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 10px;
+  cursor: pointer;
+}
+.submit {
+  border: 0;
+  border-radius: 11px;
+  width: 100%;
+  padding: 17px 20px;
+  background: #194e34;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.submit:hover {
+  background: #266b48;
+  transform: translateY(-1px);
+}
+.feedback {
+  font-size: 13px;
+  min-height: 20px;
+  color: #8c4c28;
+  margin-top: 12px;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #9aab9c;
+  margin: 24px 0;
+}
+.divider span {
+  height: 1px;
+  background: #dce5d9;
+  flex: 1;
+}
+.support {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #6b7f70;
+}
+.security {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+  border-top: 1px solid #e3e9e0;
+  padding-top: 24px;
+  margin-top: 28px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #839386;
+}
+.security > span:first-child {
+  font-size: 25px;
+  color: #749c65;
+  line-height: 1;
+}
+.login-side footer {
+  font-size: 11px;
+  color: #8a9a8d;
+  text-align: center;
+  margin-top: 30px;
+}
+.login-side footer span {
+  margin: 0 7px;
+}
+.mobile-brand {
+  display: none;
+}
+@media (max-width: 960px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .story {
+    display: none;
+  }
+  .login-side {
+    min-height: 100vh;
+    padding: 25px 25px 22px;
+  }
+  .mobile-brand {
+    display: block;
+    align-self: flex-start;
+    margin-bottom: 35px;
+    font:
+      700 22px 'Outfit',
+      sans-serif;
+    color: #194e34;
+  }
+  .mobile-brand small {
+    font-size: 8px;
+    margin-top: 0;
+  }
+  .back {
+    margin-bottom: 35px;
+  }
+  .login-wrap {
+    margin: auto 0;
+  }
+  .login-wrap h2 {
+    font-size: 43px;
+  }
+}
+@media (max-width: 480px) {
+  .login-side {
+    padding: 22px 18px;
+  }
+  .back {
+    margin-bottom: 27px;
+  }
+  .login-wrap h2 {
+    font-size: 39px;
+  }
+  .notice {
+    font-size: 11px;
+  }
+}
