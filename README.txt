@@ -9,4 +9,4 @@ New in Phase 6:
 - Create demo orders from enquiries and change their fulfilment statuses.
 - Existing enquiries, pages and dashboard remain included.
 
-IMPORTANT: Demo only. No authentication, server, database, real order placement, payment or stock reservation. All data is browser-local. Do not enter real customer data. Product images and company details are illustrative.
+IMPORTANT: Demo only. No authentication, server, database, real order placement, payment or stock reservation. All data is browser-local.
